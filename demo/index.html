@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>firebase-auth-messages demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../polymer/lib/utils/templatize.html">
+    
+    <link rel="import" href="../firebase-auth-messages.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>         
+      <div class="vertical-section-container centered">
+        <h3>Standard error code demo</h3>
+        <demo-snippet>
+          <template>
+            <dom-bind>
+            <template>            
+              <firebase-auth-messages
+                code="auth/invalid-email"
+                message="{{message}}"
+                ></firebase-auth-messages>
+                [[message]]                
+            </template>
+            </dom-bind>                 
+          </template>
+        </demo-snippet>
+      </div>
+
+      <div class="vertical-section-container centered">
+        <h3>Change string of message demo</h3>
+        <demo-snippet>
+          <template>
+            <dom-bind>
+            <template>            
+              <firebase-auth-messages
+                code="auth/invalid-email"
+                invalid-email-message="Whoopsie, wrong email adress?"
+                message="{{message}}"
+                ></firebase-auth-messages>
+                [[message]]                
+            </template>
+            </dom-bind>                 
+          </template>
+        </demo-snippet>
+      </div>
+    
+      <div class="vertical-section-container centered">
+        <h3>Custom auth message message demo</h3>
+        <demo-snippet>
+          <template>
+            <dom-bind>
+            <template>               
+              <firebase-auth-messages
+                code="custom-message"
+                custom-message="An email has been sent."
+                message="{{message}}"
+              ></firebase-auth-messages>
+              [[message]]
+            </template>
+            </dom-bind>                  
+          </template>
+        </demo-snippet>
+      </div>
+
+      <div class="vertical-section-container centered">
+        <h3>Message of unknown auth code demo</h3>
+        <demo-snippet>
+          <template>                
+          <dom-bind>
+          <template>           
+            <firebase-auth-messages
+              code="auth/this-code-does-not-exist"
+              message="{{message}}"
+            ></firebase-auth-messages>
+            [[message]]
+          </template>
+          </dom-bind>      
+        </template>
+      </demo-snippet>
+      </div>       
+  </body>
+</html>
