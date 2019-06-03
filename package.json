@@ -1,0 +1,24 @@
+{
+  "description": "Displays custom Auth messages based on Firebase error codes",
+  "name": "@polymer/firebase-auth-messages",
+  "version": "3.0.0",
+  "contributors": [
+    {
+      "name": "Sam Prinssen",
+      "url": "https://github.com/SPrinss"
+    },
+    {
+      "name": "Wouter Vroege",
+      "url": "https://github.com/woutervroege"
+    }
+  ],
+  "main": "firebase-auth-messages.js",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0",
+    "wct-browser-legacy": "^1.0.1",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
+  }
+}
