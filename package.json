@@ -1,7 +1,7 @@
 {
   "description": "Displays custom Auth messages based on Firebase error codes",
-  "name": "@polymer/firebase-auth-messages",
-  "version": "3.0.0",
+  "name": "firebase-auth-messages",
+  "version": "3.0.1",
   "contributors": [
     {
       "name": "Sam Prinssen",
